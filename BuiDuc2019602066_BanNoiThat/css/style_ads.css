@@ -1,0 +1,60 @@
+
+.silder{
+    width: 100%;
+    overflow: hidden;
+}
+.sildes{
+    width: 500%;
+    display: flex;
+}
+
+.sildes input{
+   display: none;
+}
+.silde{
+    width: 20%;
+    transition: 1s;
+}
+.navigation-manual{
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     margin-top: -3%;
+}
+.manual-btn{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background:#c68c53 ;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+@media screen  and (min-width:600px) {
+    .silder{
+        width: 100%;
+        overflow: hidden;
+    }
+    .sildes{
+        width: 500%;
+        display: flex;
+    }
+    
+}

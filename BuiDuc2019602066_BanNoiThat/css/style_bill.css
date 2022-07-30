@@ -1,0 +1,21 @@
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.main {
+  height: auto;
+  width: 100%;
+}
+
+.maincontent {
+  height: auto;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
